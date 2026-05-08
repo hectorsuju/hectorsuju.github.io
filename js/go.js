@@ -4,7 +4,7 @@
 	/* SCROLLTO MÁS EVENTOS */
 
 	var windscroll = $(window).scrollTop();
-	    if (windscroll >= 600) {
+	    if (windscroll >= 500) {
 	        $('.allnav').addClass('fixed');
 	        $('.wrapper section').each(function(i) {
 	            if ($(this).position().top <= windscroll - 74) {
@@ -27,10 +27,10 @@
 	$(document).ready(function(){
 
 		/* PARALLAX */
-		$(".imgslider1").parallax("0", 0.3);
-		$(".imgslider2").parallax("0", 0.3);
-		$(".imgslider3").parallax("0", 0.3);
-		$(".titleslider").parallax("0", 0.5);
+		$(".imgslider1").parallax("50%", 0.3, true);
+		$(".imgslider2").parallax("50%", 0.3);
+		$(".imgslider3").parallax("50%", 0.3);
+		$(".titleslider").parallax("50%", 0.5);
 
 
 		/* SCROLLTO */
@@ -72,11 +72,16 @@
 
 	$(window).on("load resize scroll", function (e) {
 
-
 	  if ($(window).width() <= 960) {
 
+	  		$("#menu .over").mouseover(function() {
+		    	$(this).animate({"background-color":"rgba(0, 0, 0, 0.2)"},{queue:false,duration:100,ease:"easeInQuad"});
+		    }).mouseout(function() {
+		    	$(this).animate({"background-color":"transparent"},{queue:false,duration:100,ease:"easeInQuad"});
+			});
+
 			var contador=1;
-	    	$('#menu li#proyectos').unbind('mouseenter mouseleave hover');
+	    	$('#menu li#proyectos').unbind('mouseenter mouseleave mouseover');
 	    	$('#submenu').slideUp=false;
 	    	$('#submenu').slideDown=false;
 
@@ -125,7 +130,7 @@
 			});
 			
 	  	} else {
-	   		$('#menu li#proyectos').bind('mouseenter mouseleave hover');
+	   		$('#menu li#proyectos').bind('mouseenter mouseleave mouseover');
 	   		$('#submenu').slideUp=true;
 	    	$('#submenu').slideDown=true;
 	    	$('#contentnav').animate({left:'0'},{queue:false,duration:300,ease:"easeInQuad"});
@@ -137,7 +142,7 @@
 			$('#submenu div').click(function(){
 				$('#contentnav').animate({left:'0'},{queue:false,duration:300,ease:"easeInQuad"});
 	    		// $('#contentnav').css("left","0px");
-			});	     	
+			});	  	
 	 	}
 
 	});
@@ -171,14 +176,14 @@
    	var tipodeproyecto;
 
 	/* paginador proyectos */
-	var projectsPerPage = 8;
+	var projectsPerPage = 6;
 	var currentPage = 0;
 	var totalPages = 0;
 
     function inici() {
         $.ajax({
             type: "GET",
-            url: "proyectos.xml",
+            url: "proyectos.xml?nocache=" + (new Date()).getTime(),
             dataType: "xml",
             success: function(xml) {
                 $(xml).find('dato').each(function(){
@@ -210,7 +215,7 @@
 
     	// Creo los apartados en subsecciones ya filtardos// 
     	for (k=0;k<subsecciones.length;k++){
-    		$("#submenu").append("<div id='a"+k+"' class='proyectoselect'>"+ subsecciones[k] +"</div>");
+    		$("#submenu").append("<div id='a"+k+"' class='proyectoselect over'>"+ subsecciones[k] +"</div>");
     		}
 
 		//Eventos Submenu//
@@ -318,13 +323,14 @@
 		visualizados.splice(0,visualizados.length);
 
 		for (k=(currentPage-1)*projectsPerPage; k<currentPage*projectsPerPage && k<visualizables.length; k++){
-			$("#contenido").append("<li id='c"+(k+1)+"' class='images'><div class='imgs'><img src ='"+image_cover[visualizables[k]]+"'><div class='backg'></div><div class='titulo'>"+title[visualizables[k]]+"</div><div class='descripcion'>"+description[visualizables[k]]+"</div></div><div id='fle'><div id='tria'></div></div></li>")
+			$("#contenido").append("<li id='c"+(k+1)+"' class='images'><div class='imgs'><img src ='"+image_cover[visualizables[k]]+"'><div class='backg'><div class='mas'><svg height='100' width='100' xmlns='http://www.w3.org/2000/svg' ><rect class='shape' /></svg><div class='txtmas'>ver más</div></div></div></div><div class='titulo'><h4>"+title[visualizables[k]]+"</h4></div><div class='descripcion'><h5>"+description[visualizables[k]]+"</h5></div><div id='fle'><div id='tria'></div></div></li>")
 			visualizados.push(visualizables[k]);
 		}
 
 		$("#contenido").append("<div id='cc' data-anchor='cc'></div>");
 	    $("#contenido .images").css("opacity","0");
 	    $("#contenido .images:first-child").animate({"opacity":"1"},{queue:false,duration:250,complete:continuaAnimacion,ease:"easeInQuad"});
+
 
     }
 
@@ -392,14 +398,18 @@
 
 		$("#contenido .images").mouseover(function(){
 			$(this).find(".backg").animate({"opacity":"0.8"},{queue:false,duration:300,ease:"easeInQuad"});
-			$(this).find(".titulo").animate({"opacity":"1"},{queue:false,duration:300,ease:"easeInQuad"});
-			$(this).find(".descripcion").animate({"opacity":"1"},{queue:false,duration:300,ease:"easeInQuad"});
+			$(this).find(".titulo").css({"color":"rgba(28,28,28,1)"});
+			$(this).find(".descripcion").css({"color":"rgba(28,28,28,0.8)"});
+			// $(this).find(".titulo").animate({"opacity":"1"},{queue:false,duration:300,ease:"easeInQuad"});
+			// $(this).find(".descripcion").animate({"opacity":"1"},{queue:false,duration:300,ease:"easeInQuad"});
 			});
 
 		$("#contenido .images").mouseout(function(){
 			$(this).find(".backg").animate({"opacity":"0"},{queue:false,duration:300,ease:"easeInQuad"});
-			$(this).find(".titulo").animate({"opacity":"0"},{queue:false,duration:300,ease:"easeInQuad"});
-			$(this).find(".descripcion").animate({"opacity":"0"},{queue:false,duration:300,ease:"easeInQuad"});
+			$(this).find(".titulo").css({"color":"rgba(28,28,28,0.6)"});
+			$(this).find(".descripcion").css({"color":"rgba(28,28,28,0.4)"});
+			// $(this).find(".titulo").animate({"opacity":"0"},{queue:false,duration:300,ease:"easeInQuad"});
+			// $(this).find(".descripcion").animate({"opacity":"0"},{queue:false,duration:300,ease:"easeInQuad"});
 			});
 
 		}
@@ -438,6 +448,7 @@
     	indice=z;
     	z=z-1;
     	var cacho=image[visualizables[z]];
+		//console.log(cacho);
     	var imgss=cacho.split("*");
     	$("#cc").css("display","block");
     	$("#cc").append("<div id='generalproyect'></div>");
@@ -446,14 +457,18 @@
     	$("#generalproyect").append("<div class='titleproyect'>"+title[visualizables[z]]+"</div><div id='cierra'><img src='images/cierra.png'></div>");
     	var suma=0;
     	var contador=0;
+		
 		for (k=0; k<imgss.length-1;k++){
-			if (String(imgss[k]).substr(0,6)=="motion"){
-	    		$("#generalproyect").append("<video controls>"+
-	    			"<source id='pr"+k+"' src='"+imgss[k]+".mp4' type='video/mp4' >+"+
-	    			"<source id='pr"+k+"' src='"+imgss[k]+".webm' type='video/webm'></video");
-    				suma=suma+(600);
-    				contador=contador+1;
-    				acabado();   				
+				//console.log(imgss[k]);
+				if (imgss[k].endsWith('.mp4')) {
+					//if (String(imgss[k]).substr(0,6)=="motion"){
+					$("#generalproyect").append("<video controls style='height: auto;'>"+
+						//"<source id='pr"+k+"' src='"+imgss[k]+".mp4' type='video/mp4' >+"+
+						//"<source id='pr"+k+"' src='"+imgss[k]+".webm' type='video/webm'></video>");
+						"<source id='pr"+k+"' src='"+imgss[k]+"' type='video/mp4' ></video>");
+						suma=suma+(600);
+						contador=contador+1;
+						acabado();   				
 	    		} else {
 	    		$("#generalproyect").append("<img id='pr"+k+"' src='"+imgss[k]+"'>");
 	    		$("#pr"+k).load(function() {
@@ -473,16 +488,17 @@
 
     function acabado(){    
     	var altura=$("#generalproyect").height();	      	
-    	$("#cc").animate({"height":altura},800,"swing");
+    	//$("#cc").animate({"height":altura},800,"swing");
+		$("#cc").animate({"height":"auto"},800,"swing");
     	$("#cierra").click(function(){
-    		$('html, body').animate({scrollTop:$('#proyects').offset().top - 74}, "swing"); 
-    	cerrar();
+			$('html, body').animate({scrollTop:$('#proyects').offset().top - 74}, "swing");
+		cerrar();
     	});  
     }
 
 
     function cerrar(z,w){
-    	$("#cc").animate({"height":'0px'},600,"swing",function(){final(w);});
+    	$("#cc").animate({"height":'auto'},600,"swing",function(){final(w);});
     }
 
     function final(w){
@@ -495,15 +511,17 @@
     }
 
     function sendmail(ev){
-
-		var to="hola@conmuchococo.com";
-		var subject="muchococo contact form";
+    	console.log('sendmail');
+		var to="hola@interiorismodelatorre.com";
+		var subject="delatorre contact form";
 		var name=$("#name").val();
-		var email=$("#email").val();
+		var email=$("#mail").val();
 		var message=$("#message").val();
 		var human=$("#human").val();
 
 		var datos="name="+name+"&email="+email+"&message="+message+"&human="+human;
+
+		console.log( datos );
 
 		$.ajax({
             type: "POST",
@@ -511,10 +529,12 @@
             url: "sendmail.php",
             dataType: "text",
             success: function(feedback) {
+            	console.log('enviado -> ' + feedback );
             	$("#contacto-result").html(feedback);
             },
 	        error: function(feedback) {
             	alert ("AJAX ERROR: "+feedback);
+            	console.log('error -> ' + feedback );
             }
 		});
 	

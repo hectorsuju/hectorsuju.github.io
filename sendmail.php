@@ -3,8 +3,8 @@
     $email = $_POST['email'];
     $message = $_POST['message'];
     $from = 'From: ' . $email; 
-    $to = 'hola@conmuchococo.com'; 
-    $subject = 'Formulario-Web';
+    $to = 'hola@interiorismodelatorre.com'; 
+    $subject = 'Formulario';
     $human = $_POST['human'];
 
     $body = "From: $name\n E-Mail: $email\n Message:\n $message";
