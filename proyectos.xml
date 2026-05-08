@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projects>
+	<dato>
+		<image_cover>images/colors-up/colors-up_cover.jpg</image_cover>
+		<image>images/colors-up/colors-up_1.jpg*</image>
+		<image>images/colors-up/colors-up_2.jpg*</image>
+		<image>images/colors-up/colors-up_3.jpg*</image>
+		<image>images/colors-up/colors-up_4.jpg*</image>
+		<title>Colors-up</title>
+		<description>Branding and Corporate Stationery</description>
+		<tipo>Branding</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/delatorre/delatorre_cover.jpg</image_cover>
+		<image>images/delatorre/delatorre_1.jpg*</image>
+		<image>images/delatorre/delatorre_2.jpg*</image>
+		<image>images/delatorre/delatorre_3.jpg*</image>
+		<title>de la torre</title>
+		<description>T-Shirt</description>
+		<tipo>Graphic</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/make-up/make-up_cover.jpg</image_cover>
+		<image>images/make-up/make-up_1.jpg*</image>
+		<image>images/make-up/make-up_2.jpg*</image>
+		<image>images/make-up/make-up_3.jpg*</image>
+		<title>Make-up</title>
+		<description>Poster</description>
+		<tipo>Graphic</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/thagson/thagson_cover.jpg</image_cover>
+		<image>motion/thagson/thagson*</image>
+		<image>images/thagson/thagson_2.jpg*</image>
+		<image>images/thagson/thagson_3.jpg*</image>
+		<title>Thagson</title>
+		<description>Animated Logo</description>
+		<tipo>Motion</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/vainilla-club/vainilla-club_cover.jpg</image_cover>
+		<image>images/vainilla-club/vainilla-club_1.jpg*</image>
+		<image>images/vainilla-club/vainilla-club_2.jpg*</image>
+		<image>images/vainilla-club/vainilla-club_3.jpg*</image>
+		<image>images/vainilla-club/vainilla-club_4.jpg*</image>
+		<image>images/vainilla-club/vainilla-club_5.jpg*</image>
+		<title>Vainilla Club</title>
+		<description>Bootstrap Web</description>
+		<tipo>Web</tipo>
+		<news>http://www.vainillaclub.com/</news> 
+	</dato>
+	<dato>
+		<image_cover>images/voila/voila_cover.jpg</image_cover>
+		<image>images/voila/voila_1.jpg*</image>
+		<image>images/voila/voila_2.jpg*</image>
+		<title>Voilà</title>
+		<description>Branding and Corporate Stationery</description>
+		<tipo>Branding</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/wasapTV/wasapTV_cover.jpg</image_cover>
+		<image>motion/wasapTV/wasapTV*</image>
+		<image>images/wasapTV/wasapTV_2.jpg*</image>
+		<image>images/wasapTV/wasapTV_3.jpg*</image>
+		<title>Wasap TV</title>
+		<description>Spot TV</description>
+		<tipo>Motion</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/elpebreblau/elpebreblau_cover.jpg</image_cover>
+		<image>images/elpebreblau/elpebreblau_1.jpg*</image>
+		<image>images/elpebreblau/elpebreblau_2.jpg*</image>
+		<image>images/elpebreblau/elpebreblau_3.jpg*</image>
+		<title>El pebre Blau</title>
+		<description>Web</description>
+		<tipo>Web</tipo>
+		<news>Off</news> 
+	</dato>
+	<dato>
+		<image_cover>images/graaatis/graaatis_cover.jpg</image_cover>
+		<image>images/graaatis/graaatis_1.jpg*</image>
+		<image>images/graaatis/graaatis_2.jpg*</image>
+		<image>images/graaatis/graaatis_3.jpg*</image>
+		<title>Graaatis.com</title>
+		<description>Web and Branding for Facebook</description>
+		<tipo>Web</tipo>
+		<news>Off</news> 
+	</dato>
+	<dato>
+		<image_cover>images/ariadna/ariadna_cover.jpg</image_cover>
+		<image>images/ariadna/ariadna_1.jpg*</image>
+		<image>images/ariadna/ariadna_2.jpg*</image>
+		<title>Ariadna Rigual</title>
+		<description>Branding and Business Card</description>
+		<tipo>Branding</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/colors-up_web/colors-up_web_cover.jpg</image_cover>
+		<image>images/colors-up_web/colors-up_web_1.jpg*</image>
+		<image>images/colors-up_web/colors-up_web_2.jpg*</image>
+		<image>images/colors-up_web/colors-up_web_3.jpg*</image>
+		<image>images/colors-up_web/colors-up_web_4.jpg*</image>
+		<image>images/colors-up_web/colors-up_web_5.jpg*</image>
+		<image>images/colors-up_web/colors-up_web_6.jpg*</image>
+		<image>images/colors-up_web/colors-up_web_7.jpg*</image>
+		<image>images/colors-up_web/colors-up_web_8.jpg*</image>
+		<title>Colors-Up</title>
+		<description>Wordpress Web</description>
+		<tipo>Web</tipo>
+		<news>http://www.colors-up.com</news> 
+	</dato>
+	<dato>
+		<image_cover>images/ozono/ozono_cover.jpg</image_cover>
+		<image>images/ozono/ozono_1.jpg*</image>
+		<image>images/ozono/ozono_2.jpg*</image>
+		<image>images/ozono/ozono_3.jpg*</image>
+		<image>images/ozono/ozono_4.jpg*</image>
+		<title>Ozono Medical Center</title>
+		<description>Branding and Wallpapper</description>
+		<tipo>Branding</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/trigol/trigol_cover.jpg</image_cover>
+		<image>motion/trigol/trigol*</image>
+		<image>images/trigol/trigol_1.jpg*</image>
+		<image>images/trigol/trigol_2.jpg*</image>
+		<title>Trigol</title>
+		<description>Cairons</description>
+		<tipo>Motion</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/telentrada/telentrada_cover.jpg</image_cover>
+		<image>images/telentrada/telentrada_1.jpg*</image>
+		<image>images/telentrada/telentrada_2.jpg*</image>
+		<image>images/telentrada/telentrada_3.jpg*</image>
+		<image>images/telentrada/telentrada_4.jpg*</image>
+		<title>Telentrada.com</title>
+		<description>Banners and mailings</description>
+		<tipo>Web</tipo>
+		<news>Off</news> 
+	</dato>
+	<dato>
+		<image_cover>images/delatorre_marca/delatorre_marca_cover.jpg</image_cover>
+		<image>images/delatorre_marca/delatorre_marca_1.jpg*</image>
+		<image>images/delatorre_marca/delatorre_marca_2.jpg*</image>
+		<image>images/delatorre_marca/delatorre_marca_3.jpg*</image>
+		<title>Interiorismo de la Torre</title>
+		<description>Branding and Corporate Stationery</description>
+		<tipo>Branding</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/40TV/40TV_cover.jpg</image_cover>
+		<image>motion/40TV/40TV*</image>
+		<image>images/40TV/40TV_1.jpg*</image>
+		<image>images/40TV/40TV_2.jpg*</image>
+		<title>40 TV</title>
+		<description>Cairon TV</description>
+		<tipo>Motion</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/doblevip/doblevip_cover.jpg</image_cover>
+		<image>images/doblevip/doblevip_1.jpg*</image>
+		<image>images/doblevip/doblevip_2.jpg*</image>
+		<image>images/doblevip/doblevip_3.jpg*</image>
+		<image>images/doblevip/doblevip_4.jpg*</image>
+		<image>images/doblevip/doblevip_5.jpg*</image>
+		<image>images/doblevip/doblevip_6.jpg*</image>
+		<image>images/doblevip/doblevip_7.jpg*</image>
+		<title>DobleVip</title>
+		<description>Branding, Sticker, Diptych and App</description>
+		<tipo>Branding</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/colectivosvip/colectivosvip_cover.jpg</image_cover>
+		<image>images/colectivosvip/colectivosvip_1.jpg*</image>
+		<image>images/colectivosvip/colectivosvip_2.jpg*</image>
+		<image>images/colectivosvip/colectivosvip_3.jpg*</image>
+		<image>images/colectivosvip/colectivosvip_4.jpg*</image>
+		<image>images/colectivosvip/colectivosvip_5.jpg*</image>
+		<image>images/colectivosvip/colectivosvip_6.jpg*</image>
+		<image>images/colectivosvip/colectivosvip_7.jpg*</image>
+		<image>images/colectivosvip/colectivosvip_8.jpg*</image>
+		<title>ColectivosVip</title>
+		<description>Parallax Web</description>
+		<tipo>Web</tipo>
+		<news>http://www.colectivosvip.com/</news> 
+	</dato>
+	<dato>
+		<image_cover>images/BBVA/BBVA_cover.jpg</image_cover>
+		<image>images/BBVA/BBVA_1.jpg*</image>
+		<image>images/BBVA/BBVA_2.jpg*</image>
+		<image>images/BBVA/BBVA_3.jpg*</image>
+		<image>images/BBVA/BBVA_4.jpg*</image>
+		<title>Cupones y Descuentos</title>
+		<description>Web for BBVA</description>
+		<tipo>Web</tipo>
+		<news>http://cuponesydescuentos.decomprasbbva.com</news> 
+	</dato>
+	<dato>
+		<image_cover>images/tatamia/tatamia_cover.jpg</image_cover>
+		<image>images/tatamia/tatamia_1.jpg*</image>
+		<image>images/tatamia/tatamia_2.jpg*</image>
+		<image>images/tatamia/tatamia_3.jpg*</image>
+		<image>images/tatamia/tatamia_4.jpg*</image>
+		<title>Tatamia</title>
+		<description>Web</description>
+		<tipo>Web</tipo>
+		<news>http://www.tatamia.com/</news> 
+	</dato>
+	<dato>
+		<image_cover>images/chatvoz/chatvoz_cover.jpg</image_cover>
+		<image>motion/chatvoz/chatvoz*</image>
+		<image>images/chatvoz/chatvoz_1.jpg*</image>
+		<image>images/chatvoz/chatvoz_2.jpg*</image>
+		<image>images/chatvoz/chatvoz_3.jpg*</image>
+		<title>ChatVoz</title>
+		<description>Spot TV</description>
+		<tipo>Motion</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/nvey/nvey_cover.jpg</image_cover>
+		<image>images/nvey/nvey_1.jpg*</image>
+		<image>images/nvey/nvey_2.jpg*</image>
+		<image>images/nvey/nvey_3.jpg*</image>
+		<image>images/nvey/nvey_4.jpg*</image>
+		<image>images/nvey/nvey_5.jpg*</image>
+		<image>images/nvey/nvey_6.jpg*</image>
+		<image>images/nvey/nvey_7.jpg*</image>
+		<title>Nvey</title>
+		<description>Web</description>
+		<tipo>Web</tipo>
+		<news>Off</news> 
+	</dato>
+	<dato>
+		<image_cover>images/brick/brick_cover.jpg</image_cover>
+		<image>images/brick/brick_1.jpg*</image>
+		<image>images/brick/brick_2.jpg*</image>
+		<image>images/brick/brick_3.jpg*</image>
+		<image>images/brick/brick_4.jpg*</image>
+		<image>images/brick/brick_5.jpg*</image>
+		<title>Seh-lelha 2010</title>
+		<description>Interactive for Brick Comunicació</description>
+		<tipo>Web</tipo>
+		<news></news>
+	</dato>
+	<dato>
+		<image_cover>images/palabras/palabras_cover.jpg</image_cover>
+		<image>motion/palabras/palabras*</image>
+		<image>images/palabras/palabras_1.jpg*</image>
+		<image>images/palabras/palabras_2.jpg*</image>
+		<image>images/palabras/palabras_3.jpg*</image>
+		<title>Palabras</title>
+		<description>Spot TV</description>
+		<tipo>Motion</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/wasaptv_app/wasaptv_app_cover.jpg</image_cover>
+		<image>images/wasaptv_app/wasaptv_app_1.jpg*</image>
+		<image>images/wasaptv_app/wasaptv_app_2.jpg*</image>
+		<image>images/wasaptv_app/wasaptv_app_3.jpg*</image>
+		<image>images/wasaptv_app/wasaptv_app_4.jpg*</image>
+		<image>images/wasaptv_app/wasaptv_app_5.jpg*</image>
+		<title>Wasap TV</title>
+		<description>APP</description>
+		<tipo>Web</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/perfumesclub/perfumesclub_cover.jpg</image_cover>
+		<image>motion/perfumesclub/perfumesclub*</image>
+		<image>images/perfumesclub/perfumesclub_1.jpg*</image>
+		<image>images/perfumesclub/perfumesclub_2.jpg*</image>
+		<title>Perfumes Club</title>
+		<description>Spot</description>
+		<tipo>Motion</tipo>
+		<news></news> 
+	</dato>
+	<dato>
+		<image_cover>images/reel_2010/reel_2010_cover.jpg</image_cover>
+		<image>motion/reel_2010/reel_2010_sd*</image>
+		<image>images/reel_2010/reel_2010_1.jpg*</image>
+		<image>images/reel_2010/reel_2010_2.jpg*</image>
+		<image>images/reel_2010/reel_2010_3.jpg*</image>
+		<title>Reel 2010</title>
+		<description>Reel 2010</description>
+		<tipo>Motion</tipo>
+		<news></news> 
+	</dato>
+</projects>
