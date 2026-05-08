@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'DINPro-Light';
+  src: url('DINPro-Light.eot?#iefix') format('embedded-opentype'),  url('DINPro-Light.otf')  format('opentype'),
+         url('DINPro-Light.woff') format('woff'), url('DINPro-Light.ttf')  format('truetype'), url('DINPro-Light.svg#DINPro-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINPro-Medium';
+  src: url('DINPro-Medium.eot?#iefix') format('embedded-opentype'),  url('DINPro-Medium.otf')  format('opentype'),
+         url('DINPro-Medium.woff') format('woff'), url('DINPro-Medium.ttf')  format('truetype'), url('DINPro-Medium.svg#DINPro-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'DINPro-Regular';
+  src: url('DINPro-Regular.eot?#iefix') format('embedded-opentype'),  url('DINPro-Regular.otf')  format('opentype'),
+         url('DINPro-Regular.woff') format('woff'), url('DINPro-Regular.ttf')  format('truetype'), url('DINPro-Regular.svg#DINPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'DINPro-Bold';
+  src: url('DINPro-Bold.eot?#iefix') format('embedded-opentype'),  url('DINPro-Bold.otf')  format('opentype'),
+         url('DINPro-Bold.woff') format('woff'), url('DINPro-Bold.ttf')  format('truetype'), url('DINPro-Bold.svg#DINPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'DINPro-Black';
+  src: url('DINPro-Black.eot?#iefix') format('embedded-opentype'),  url('DINPro-Black.otf')  format('opentype'),
+         url('DINPro-Black.woff') format('woff'), url('DINPro-Black.ttf')  format('truetype'), url('DINPro-Black.svg#DINPro-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ITCFranklinGothicStd-Med';
+    src: url('original_ITCFranklinGothicStd-Med.eot?#iefix') format('embedded-opentype'), 
+         url('original_ITCFranklinGothicStd-Med.woff') format('woff'),
+         url('original_ITCFranklinGothicStd-Med.ttf') format('truetype'),
+         url('original_ITCFranklinGothicStd-Med.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('raleway-regular-webfont.eot');
+    src: url('raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway-regular-webfont.woff2') format('woff2'),
+         url('raleway-regular-webfont.woff') format('woff'),
+         url('raleway-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('raleway-light-webfont.eot');
+    src: url('raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway-light-webfont.woff2') format('woff2'),
+         url('raleway-light-webfont.woff') format('woff'),
+         url('raleway-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('raleway-thin-webfont.eot');
+    src: url('raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway-thin-webfont.woff2') format('woff2'),
+         url('raleway-thin-webfont.woff') format('woff'),
+         url('raleway-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
