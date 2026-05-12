@@ -252,7 +252,7 @@ header {
 .wrapper section,
 .wrapper aside {
 	width: 100%;
-
+	max-width: 1002PX;
 	margin: 0 auto;
 	padding: 20px 0;
 	clear: both;
