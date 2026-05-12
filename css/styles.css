@@ -252,7 +252,7 @@ header {
 .wrapper section,
 .wrapper aside {
 	width: 100%;
-	max-width: 1002px;
+
 	margin: 0 auto;
 	padding: 20px 0;
 	clear: both;
@@ -581,7 +581,6 @@ li#contact.active, li#contact.select {
 
 .wrapper section#proyects {
 	width: 100%;
-	max-width: 1002px%;
 	position: relative;
 	min-height: 450px;
 	clear: both;
@@ -737,7 +736,6 @@ section#proyects h2 {
 	clear: both;
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1002px;
 	overflow: hidden;
 	display: inline-block;
 }
