@@ -184,11 +184,12 @@ p {
 
 h1 {
 	font-family: 'ralewaythin', Verdana;
-	font-weight: normal;
+	font-weight: 600;
 	font-size: 62px;
 	padding: 0;
-	text-align: center;
-	color: #ffffff;
+	text-align: left;
+	color: #000000;
+	line-height: 72px;
 }
 
 h2 {
@@ -199,6 +200,8 @@ h2 {
 	font-weight: normal;
 	margin: 20px 0;
 }
+
+
 
 #legal_content h2 {
 	font-family: 'DINPro-Medium', Verdana;
@@ -212,11 +215,12 @@ h2 {
 h3 {
 	font-family: 'DINPro-Light', Verdana;
 	padding: 0;
-	text-align: center;
-	font-size: 24px;
-	font-weight: normal;
+	text-align: left;
+	font-size: 28px;
+	font-weight: bold;
 	margin: 0 0 20px 0;
-	color: white;
+	color: #000000;
+	line-height: 40px;
 }
 
 h4 {
@@ -243,7 +247,7 @@ h5 {
 
 header {
 	width: 100%;
-	height: 400px;
+	height: 700px;
 	position: relative;
 	vertical-align: middle;
 	overflow: hidden;
@@ -252,7 +256,6 @@ header {
 .wrapper section,
 .wrapper aside {
 	width: 100%;
-	max-width: 1002PX;
 	margin: 0 auto;
 	padding: 20px 0;
 	clear: both;
@@ -263,39 +266,19 @@ header {
 
 #slider {
 	width: 100%;
-	height: 400px;
+	height: 700px;
 	position: absolute;
-	background-color: #ffffff;
+	background-color: #000000;
 }
 
-#slider .imgslider1 {
+#slider .cover {
 	position: absolute;
 	width: 100%;
-	height: 400px;
-	background: #a9a9a9 url("../images/slider/delatorre1.jpg");
+	height: 700px;
+	background: #000000 url("../images/cover.png");
+	background-size: contain;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: bottom center;
-}
-
-#slider .imgslider2 {
-	position: absolute;
-	width: 100%;
-	height: 400px;
-	background: #a9a9a9 url("../images/slider/delatorre2.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: bottom center;
-}
-
-#slider .imgslider3 {
-	position: absolute;
-	width: 100%;
-	height: 400px;
-	background: #181818 url("../images/slider/delatorre3.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: bottom center;
+	background-position: bottom right;
 }
 
 .titleslider {
@@ -303,16 +286,21 @@ header {
 	width: 100%;
 	max-width: 860px;
 	margin: 0 auto;
-	top: 200px;
+	top: 140px;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
 	right: 0;
-	background-color: rgba(0, 14, 53, 0.93);
 	padding: 20px 0;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% auto;
+	text-align: left;
+}
+
+.titleslider H1,
+.titleslider H3 {
+	color: white;
 }
 
 /* HEADER 2*/
@@ -395,7 +383,7 @@ header {
 
 .allnav {
 	position: absolute;
-	top: 500px;
+	top: 700px;
 	display: block;
 	border-bottom: 1px solid #cccfd1;
 	width: 100%;
@@ -592,36 +580,35 @@ section#proyects h2 {
 
 #contenido {
 	clear: both;
-	margin: 0;
-	padding: 0;
 	margin: 0 auto;
+	padding: 0 20px;
 	position: relative;
-	text-align: center;
 	width: 100%;
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 20px;
+	row-gap: 0;
+	box-sizing: border-box;
 }
 
 .images {
 	position: relative;
-	white-space: nowrap;
-	display: inline-block;
+	white-space: normal;
+	display: block;
 	text-align: center;
 	vertical-align: top;
 	border: 0;
-	margin: 0 auto;
-	margin-right: 10px;
-	margin-left: 10px;
+	margin: 0;
 	cursor: pointer;
 	overflow: hidden;
 }
 
-#contenido li.images:nth-child(3n+1) {
-	/*    display: inline;*/
-}
-
 .imgs {
 	position: relative;
-	width: 300px;
-	height: 300px;
+	width: 100%;
+	padding-top: 100%;
+	/* square ratio */
 	background-repeat: no-repeat;
 	display: block;
 	text-align: center;
@@ -634,9 +621,9 @@ section#proyects h2 {
 }
 
 .imgs img {
-	max-width: 100%;
-	/*max-height:100%;*/
-	height: auto;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 	top: 0;
 	left: 0;
 	position: absolute;
@@ -720,25 +707,41 @@ section#proyects h2 {
 	transition: all 0.10s linear;
 }
 
+.menucent2 {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
 #cc {
 	position: relative;
-	width: 100%;
-	float: left;
-	background-color: #1F201C;
+	grid-column: 1 / -1;
 	color: white;
 	display: none;
-	margin: 0;
-	padding-bottom: 30px;
+	margin-top: 0;
 	margin-bottom: 20px;
+	padding-bottom: 30px;
+}
+
+#cc::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100vw;
+	background-color: #1F201C;
+	z-index: -1;
 }
 
 #generalproyect {
 	clear: both;
-	margin: 0 auto;
 	width: 100%;
 	overflow: hidden;
-	display: inline-block;
+	display: block;
 }
+
 
 .titleproyect {
 	font-family: "DINPro-light", Verdana;
@@ -752,7 +755,6 @@ section#proyects h2 {
 
 .descriproyect,
 .newproyect {
-	display: none;
 	font-family: "DINPro-light", Verdana;
 	font-size: 20px;
 	font-weight: normal;
@@ -764,19 +766,16 @@ section#proyects h2 {
 }
 
 #generalproyect img {
-	/*	width: 100%;
-	float: left;*/
-	display: inline-block;
-	margin-left: 5%;
-	margin-right: 5%;
-	width: 45%;
+	display: block;
+	margin: 20px 0;
+	width: 100%;
 }
 
 #generalproyect video {
-	display: inline-block;
-	margin-left: 5%;
-	margin-right: 5%;
-	width: 45%;
+	display: block;
+	margin: 20px 0;
+	width: 100%;
+	height: auto;
 }
 
 /*#generalproyect video{
@@ -791,7 +790,7 @@ section#proyects h2 {
 	float: left;
 	width: 10%;
 	margin: 20px 0;
-	text-align: right;
+	text-align: left;
 	-webkit-transition: all 0.10s linear;
 	-moz-transition: all 0.10s linear;
 	-ms-transition: all 0.10s linear;
@@ -813,11 +812,12 @@ section#proyects h2 {
 
 #fle {
 	clear: both;
-	width: 300px;
+	width: 100%;
 	height: 25px;
 	display: none;
 	text-align: center;
 	margin-top: 5px;
+	grid-column: 1 / -1;
 }
 
 #tria {
@@ -955,6 +955,7 @@ section#proyects h2 {
 
 #nosotros p {
 	margin: 50px 0 100px;
+	text-align: left;
 }
 
 span.nosotrostitle {
@@ -1021,8 +1022,10 @@ section#misamigos {
 
 #generalfriends {
 	width: 100%;
+	max-width: 1002px;
 	display: block;
 	text-align: center;
+	margin: 0 auto;
 }
 
 .contentfriends {
@@ -1442,6 +1445,11 @@ input#submit:hover {
 		width: 94%;
 	}
 
+	#contenido {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 0 10px;
+	}
+
 	#nosotros,
 	#equipo,
 	#contact,
@@ -1455,7 +1463,7 @@ input#submit:hover {
 	}
 
 	.wrapper {
-		padding: 32px 0 0 0;
+		padding: 80px 0 0 0;
 	}
 
 	#header2 {
@@ -1527,7 +1535,7 @@ input#submit:hover {
 	}
 
 	#menu_bar a i {
-		float: left;
+		float: right;
 		margin: 16px 20px 10px 0;
 		text-indent: 20px;
 	}
@@ -1600,15 +1608,17 @@ input#submit:hover {
 	}
 
 	#generalproyect img {
-		margin: 5px auto;
-		float: left;
+		display: block;
+		margin: 10px 0;
 		width: 100%;
+		float: none;
 	}
 
 	#generalproyect video {
-		margin: 5px auto;
-		float: left;
+		display: block;
+		margin: 10px 0;
 		width: 100%;
+		float: none;
 	}
 
 	.titleproyect {
@@ -1617,12 +1627,12 @@ input#submit:hover {
 
 	#cierra {
 		width: 40%;
-		text-align: right;
+		text-align: left;
 	}
 
 	#generalproyect #cierra img {
 		width: auto;
-		text-align: right;
+		text-align: left;
 		float: none;
 	}
 
@@ -1711,6 +1721,11 @@ input#submit:hover {
 
 }
 
-/*@media all and (max-width: 480px) {
+@media all and (max-width: 480px) {
 
-}*/
+	#contenido {
+		grid-template-columns: 1fr;
+		padding: 0 10px;
+	}
+
+}
